@@ -64,7 +64,7 @@ select{
   font-size: 1.4rem;
 }
 
-/* Main */
+/* header */
 .header-container{
   height: 115vh;
   background-image: url("./assets/background-img.jpg");
@@ -199,11 +199,11 @@ select{
 
 .mobile-container{
   flex: 1;
-  position: relative;
 }
 
 .mobile-img{
   max-width: 510px;
+  position: relative;
 }
 
 .mobile-card{
@@ -217,8 +217,8 @@ select{
   display: flex;
   align-items: center;
   bottom: 8%;
-  left: 15%;
-  /* transform: translateX(15%); */
+  left: 50% ;
+  transform: translateX(-50%);
 }
 
 .box-shot-img{
@@ -230,7 +230,6 @@ select{
   font-size: 0.9rem;
   font-weight: 100;
   color: #0071eb;
-
 }
 
 .download-gif{
@@ -290,7 +289,7 @@ select{
 .faq-answer.closed{
   max-height: 0px;
   overflow: hidden;
-  transition: max-height 0.25s cubic-bezier(.5,0,.1,1);
+  transition: max-height 0.1s cubic-bezier(.5,0,.1,1);
 }
 
 
@@ -322,7 +321,7 @@ select{
 }
 
 
-.faq-button-container button {
+.faq-button{
   font-size: 1.7rem;
   margin: 2em 0 0 1em;
 }
@@ -335,7 +334,7 @@ select{
 }
 
 .footer-container{
-  width: 70%;
+  width: 80%;
   margin: 0 auto;
   color: var(--clr-gray);
 }
@@ -346,6 +345,17 @@ select{
   font-size: 13px;
   margin: 2em 0;
   columns:4;
+}
+
+@media only screen and (max-width:758px){
+  .footer-links{
+    columns: 3;
+  }
+}
+@media only screen and (max-width:591px){
+  .footer-links{
+    columns: 2;
+  }
 }
 
 .link-item, .footer-link-item{
@@ -404,5 +414,208 @@ select{
   cursor: pointer;
 }
 
+@media only screen and (max-width:948px){
+  /* header */
+  .top-container{
+    margin: 2px 35px;
+  }
+
+  .logo-container{
+    width: 110px;
+  }
+
+  .header-title{
+    font-size: 3.125rem;
+  }
+
+  .header-p{
+    font-size: 1.625rem;
+  }
+  .info-wrapper button{
+    font-size: 1rem;
+    padding-top: 1em ;
+    padding-bottom: 1em ;
+  }
+
+  /* Tv section */
+
+  .tv-wrapper{
+    padding: 70px 45px;
+  }
+
+  .tv-container{
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+  }
+
+  .tv-info-container {
+    text-align: center;
+  }
+
+  .tv-info-container button{
+    display: none;
+    
+  }
+
+  .section-title{
+    font-size: 2.5rem;
+  }
+  .section-p{
+    font-size:1.25rem;
+    margin-bottom:0;
+  }
+
+  .tv-video-container{
+    width: 80%;
+  }
+
+  /* Download */
+
+  .download-container{
+    flex-direction: column;
+  }
+
+  .mobile-container{
+    order: 1;
+  }
+  .download-info-container{
+    text-align: center;
+  }
+  .download-info-container button {
+    display: none;
+  }
+
+  /* FAQ */
+  .faq-wrapper{
+    padding: 70px 45px;
+  }
+
+  .faq-wrapper h1{
+    font-size: 2.5rem;
+    margin-bottom: 0.5em;
+  }
+  
+  .faq-list-container{
+    width: 90%;
+  }
+
+  .faq-question, .faq-answer p{
+    font-size: 1.25rem;
+  }
+
+  .x-close-icon-container{
+    width: 20px;
+  }
+
+  .faq-button{
+    font-size: 1rem;
+    padding-top: 1em ;
+    padding-bottom: 1em ;
+    margin-top: 1em;
+  }
+
+  /* Footer */
+  .footer-wrapper{
+    padding:70px 45px;
+  }
+
+  .footer-container{
+    width: 90%;
+  }
+}
 
 
+@media only screen and (max-width:549px){
+  /* header */
+
+  .header-container{
+    height: 80vh;
+  }
+
+  .top-container{
+    margin: 2px 65px;
+  }
+
+  .top-container button{
+    font-size: .9rem;
+  }
+
+  .logo-container{
+    width: 90px;
+  }
+
+  .header-title{
+    font-size: 1.75rem;
+  }
+
+  .header-p{
+    font-size:  1.125rem;
+  }
+ 
+  /* Tv section */
+
+  .tv-wrapper{
+    padding: 50px 5%;
+  }
+
+  .section-title{
+    font-size: 1.625rem;
+  }
+  .section-p{
+    font-size: 1.125rem;
+  }
+
+  .tv-video-container{
+    width: 100%;
+  }
+
+  /* Download */
+  .download-wrapper{
+    padding: 50px 5%;
+  }
+
+  .download-info-container{
+    padding: 0;
+  }
+
+  .box-shot-img{
+    max-width: 30px;
+  }
+  .mobile-card{
+    min-width: 15rem;
+  }
+
+  /* FAQ */
+  .faq-wrapper{
+    padding: 50px 0px;
+  }
+
+  .faq-wrapper h1{
+    font-size: 1.625rem;
+    margin-bottom: 0.5em;
+  }
+  
+  .faq-list-container{
+    width: 100%
+  }
+
+  .faq-question, .faq-answer p{
+    font-size: 1.25rem;
+  }
+
+  .x-close-icon-container{
+    width: 20px;
+  }
+
+  .faq-button{
+    font-size: 1rem;
+    padding-top: 1em ;
+    padding-bottom: 1em ;
+    margin-top: 0.5em;
+  }
+
+
+
+}

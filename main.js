@@ -51,19 +51,12 @@ function addFaqsEventListeners(){
   
   questionButtons.forEach(button => {
     button.addEventListener("click", e => {
-
       closeIcons.forEach(icon  => {
-
-        
-
-        if(icon.parentElement.dataset.faqId === e.currentTarget.dataset.faqId ){
-          console.log("entra");
-          
+        if(icon.parentElement.dataset.faqId === e.currentTarget.dataset.faqId ){          
           icon.classList.toggle("icon-close");
         }else{
           icon.classList.add("icon-close");
         }
-
       })
 
       faqAnswers.forEach(answer => {
