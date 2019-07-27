@@ -1,0 +1,142 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Netflix</title>
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.9.0/css/all.css" integrity="sha384-i1LQnF23gykqWXg6jxC2ZbCbUMxyw5gLZY6UiUS98LYV5unm8GWmfkIS6jqJfb4E" crossorigin="anonymous">
+  <!-- oswald font -->
+  <link href="https://fonts.googleapis.com/css?family=Oswald:300,400,500,600,700&display=swap" rel="stylesheet">
+
+  <!-- Roboto font -->
+  <link href="https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700,900&display=swap" rel="stylesheet">
+
+  <!-- Style cheet -->
+  <link rel="stylesheet" href="style.css">
+  <!-- Script -->
+  <script defer src="main.js" ></script>
+
+</head>
+<body>
+  <header class="header-container" >
+    <div class="top-container">
+      <div class="logo-container">
+        <img class="logo" src="./assets/logo.png" alt="">
+      </div>
+      <button class="btn btn-signin">Sign In</button>  
+   </div>
+   <div class="info-wrapper">
+     <div class="info-container">
+       <h1 class="header-title">Unlimited movies, TV shows, and more.</h1>
+       <p class="header-p">Watch anywhere. Cancel anytime</p>
+       <button class="btn btn-lg">
+          try it now 
+          <i class="fas fa-chevron-right btn-icon"></i> 
+      </button>
+     </div>
+   </div>
+  </header>
+
+  
+  <section class="tv-wrapper">
+    <div class="tv-container">
+      <div class="tv-info-container">
+        <h1 class="section-title">Enjoy on your TV.</h1>
+        <p class="section-p">Watch on Smart TVs, Playstation, Xbox, Chromecast, Apple TV, Blu-ray players, and more.</p>
+        <button class="btn btn-lg btn-secondary btn-outline">try it now 
+          <i class="fas fa-chevron-right btn-icon"></i> 
+        </button> 
+      </div>
+  
+      <div class="tv-video-container">
+        <div class="tv-img">
+          <img src="/assets/tv.png" alt="">
+        </div>
+        <div class="tv-card-video-container">
+          <video 
+            class="tv-card-video" 
+            autoplay="" playsinline="" muted="" loop=""
+          >
+            <source src="https://assets.nflxext.com/ffe/siteui/acquisition/ourStory/fuji/desktop/video-tv.m4v" type="video/mp4">
+          </video>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+
+  <section class="download-wrapper">
+    <div class="download-container">
+      <div class="mobile-container">
+        <div class="mobile-img">
+          <img src="./assets/mobile-st.png" alt="cool image">
+        </div>
+        <div class="mobile-card">
+          <div class="box-shot-img">
+            <img src="./assets/boxshot.png" alt="cool image">
+          </div>
+          <div class="mobile-card-text">
+            <h4>Stranger Things</h4>
+            <p>Downloading...</p>
+          </div>
+          <div class="download-gif">
+            <img src="./assets/download-icon-st.gif" alt="gif">
+          </div>
+        </div>
+      </div>
+      <div class="download-info-container">
+        <h1 class="section-title">Download your shows to watch on the go.</h1>
+        <p class="section-p">Save your data and watch all your favorites offline.</p>
+        <button class="btn btn-lg btn-secondary btn-outline">try it now 
+          <i class="fas fa-chevron-right btn-icon"></i> 
+        </button> 
+      </div>
+    </div>
+  </section>
+  <section class="faq-wrapper">
+      <h1>Frequently Asked Questions</h1>
+      <ul class="faq-list-container" data-faq-list-container>
+      </ul>
+      <div class="faq-button-container">
+        <button class="btn btn-lg">
+          try it now 
+          <i class="fas fa-chevron-right btn-icon"></i> 
+        </button>
+      </div>
+  </section>
+  <footer class="footer-wrapper">
+    <div class="footer-container">
+      <p class="footer-top">
+        Questions? Call
+        <a class="link-item"  href="#">+1 (408) 469-4467 (USA)</a>
+      </p>
+      <ul class="footer-links">
+        <li><a class="footer-link-item" href="#">FAQ</a></li>
+        <li><a class="footer-link-item" href="#">Investor Relations</a></li>
+        <li><a class="footer-link-item" href="#">Privacy</a></li>
+        <li><a class="footer-link-item" href="#">Privacy Test</a></li>
+        <li><a class="footer-link-item" href="#">Help Center</a></li>
+        <li><a class="footer-link-item" href="#">Jobs</a></li>
+        <li><a class="footer-link-item" href="#">Cookies Preferences</a></li>
+        <li><a class="footer-link-item" href="#">Legal Notices</a></li>
+        <li><a class="footer-link-item" href="#">Account</a></li>
+        <li><a class="footer-link-item" href="#">Ways To Watch</a></li>
+        <li><a class="footer-link-item" href="#">Corporate Information</a></li>
+        <li><a class="footer-link-item" href="#">Netflix Originals</a></li>
+        <li><a class="footer-link-item" href="#">Media Center</a></li>
+        <li><a class="footer-link-item" href="#">Terms of Use</a></li>
+        <li><a class="footer-link-item" href="#">Contact Us</a></li>
+      </ul>
+      <div class="select-lang globe arrow">
+        <select  class="lang-picker" name="lang" id="lang">
+          <option value="EN">English</option>
+          <option value="ES">Español</option>
+        </select>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>
